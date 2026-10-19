@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of Music Genres</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Decorative Glows -->
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Header & Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="icon">🎵</span> Sound Waves
+    </div>
+    <div class="slide-counter">
+      Slide <span id="current-slide-num">1</span> of <span id="total-slides-num">6</span>
+    </div>
+  </header>
+
+  <!-- Presentation Deck Container -->
+  <main class="presentation-container">
+
+    <!-- SLIDE 1: Title -->
+    <section class="slide active" id="slide-1">
+      <div class="slide-content title-slide">
+        <span class="badge">Interactive Deck</span>
+        <h1>The Evolution of <br><span class="gradient-text">Music Genres</span></h1>
+        <p class="subtitle">A journey through rhythm, emotion, culture, and sound technology across decades.</p>
+        <button class="cta-btn" onclick="nextSlide()">Start Journey →</button>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: Classical & Jazz -->
+    <section class="slide" id="slide-2">
+      <div class="slide-content">
+        <div class="category-header">
+          <span class="category-tag">Acoustic Eras</span>
+          <h2>Classical & Jazz</h2>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">🎻</div>
+            <h3>Classical</h3>
+            <span class="timeline">1750 – 1820+</span>
+            <p>Rooted in tradition, orchestrations, and complex compositional structures. Pioneered by masters like Mozart, Beethoven, and Bach.</p>
+            <ul>
+              <li><strong>Key Features:</strong> Symphonies, Concertos, Acoustic setup</li>
+              <li><strong>Impact:</strong> Foundation of musical theory</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎷</div>
+            <h3>Jazz</h3>
+            <span class="timeline">Early 1900s</span>
+            <p>Born in New Orleans, blending African rhythms and European harmonies. Celebrates spontaneity, swing notes, and improvisation.</p>
+            <ul>
+              <li><strong>Key Features:</strong> Syncopation, Brass instruments, Jamming</li>
+              <li><strong>Impact:</strong> Influenced Rock, R&B, and Modern Pop</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: Rock & Hip-Hop -->
+    <section class="slide" id="slide-3">
+      <div class="slide-content">
+        <div class="category-header">
+          <span class="category-tag">Cultural Revolutions</span>
+          <h2>Rock & Hip-Hop</h2>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">🎸</div>
+            <h3>Rock & Roll</h3>
+            <span class="timeline">1950s – Present</span>
+            <p>Emerged with amplified electric guitars, rebellious lyrics, and high-energy drums. A symbol of youth culture and social change.</p>
+            <ul>
+              <li><strong>Sub-genres:</strong> Punk, Heavy Metal, Indie Rock</li>
+              <li><strong>Iconic Era:</strong> The Beatles, Led Zeppelin, Queen</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎤</div>
+            <h3>Hip-Hop</h3>
+            <span class="timeline">1970s – Present</span>
+            <p>Originated in the Bronx with DJing, breakdancing, and MCing. Transformed storytelling through rhythmic speech and beat-making.</p>
+            <ul>
+              <li><strong>Sub-genres:</strong> Boom Bap, Trap, Conscious Rap</li>
+              <li><strong>Key Features:</strong> Sampling, Flow, Lyricism</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: Electronic & Modern Pop -->
+    <section class="slide" id="slide-4">
+      <div class="slide-content">
+        <div class="category-header">
+          <span class="category-tag">Digital Soundscapes</span>
+          <h2>EDM & Modern Pop</h2>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">🖲️</div>
+            <h3>Electronic (EDM)</h3>
+            <span class="timeline">1980s – Present</span>
+            <p>Driven by synthesizers, drum machines, and software. Built around hypnotic beats designed for festivals and dance floors.</p>
+            <ul>
+              <li><strong>Sub-genres:</strong> House, Techno, Dubstep, Synthwave</li>
+              <li><strong>Focus:</strong> Build-ups, Drops, Sound design</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">✨</div>
+            <h3>Pop & Global Beats</h3>
+            <span class="timeline">Modern Era</span>
+            <p>Highly accessible, catchy hooks, and global fusion incorporating K-Pop, Afrobeat, and Latin rhythms into mainstream music.</p>
+            <ul>
+              <li><strong>Sub-genres:</strong> K-Pop, Latin Pop, Afrobeats</li>
+              <li><strong>Focus:</strong> Catchy melodies, High production value</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: Music Genre Spectrum (Interactive Graphic) -->
+    <section class="slide" id="slide-5">
+      <div class="slide-content">
+        <div class="category-header">
+          <span class="category-tag">Comparative Spectrum</span>
+          <h2>Energy vs. Complexity</h2>
+        </div>
+        <div class="spectrum-container">
+          <div class="spectrum-axis">
+            <div class="genre-bubble" style="top: 20%; left: 25%;">
+              <span>🎻 Classical</span>
+              <small>High Complexity / Low Energy</small>
+            </div>
+            <div class="genre-bubble" style="top: 35%; left: 75%;">
+              <span>🎸 Heavy Metal</span>
+              <small>High Energy / Mid Complexity</small>
+            </div>
+            <div class="genre-bubble" style="top: 70%; left: 80%;">
+              <span>🎧 EDM</span>
+              <small>High Energy / Low-Mid Complexity</small>
+            </div>
+            <div class="genre-bubble" style="top: 50%; left: 45%;">
+              <span>🎷 Jazz</span>
+              <small>High Complexity / High Energy</small>
+            </div>
+            <div class="genre-bubble" style="top: 75%; left: 30%;">
+              <span>☕ Ambient / Lo-Fi</span>
+              <small>Low Energy / Low Complexity</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: Conclusion -->
+    <section class="slide" id="slide-6">
+      <div class="slide-content title-slide">
+        <span class="badge">Conclusion</span>
+        <h2>Music Has No Boundaries</h2>
+        <p class="subtitle">Genres aren't rigid boxes—they are fluid, constantly blending, evolving, and reinventing how humanity expresses emotion.</p>
+        <div class="visualizer-mock">
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        </div>
+        <button class="cta-btn secondary" onclick="goToSlide(1)">Replay Presentation ↺</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation Controls -->
+  <footer class="controls">
+    <button class="control-btn" id="prev-btn" onclick="prevSlide()">‹ Prev</button>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <button class="control-btn" id="next-btn" onclick="nextSlide()">Next ›</button>
+  </footer>
+
+  <!-- JavaScript for Navigation & Interactivity -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const currentSlideNum = document.getElementById('current-slide-num');
+    const totalSlidesNum = document.getElementById('total-slides-num');
+    const progressBar = document.getElementById('progress-bar');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    totalSlidesNum.textContent = totalSlides;
+
+    function updateSlide() {
+      slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === currentSlide) {
+          slide.classList.add('active');
+        }
+      });
+
+      // Update Header counter & Progress Bar
+      currentSlideNum.textContent = currentSlide + 1;
+      const progressPercent = ((currentSlide + 1) / totalSlides) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+
+      // Disable/Enable buttons
+      prevBtn.disabled = currentSlide === 0;
+      nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateSlide();
+      }
+    }
+
+    function goToSlide(slideIndex) {
+      currentSlide = slideIndex - 1;
+      updateSlide();
+    }
+
+    // Keyboard Shortcuts (Left & Right Arrow Keys)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'Space') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+
+    // Initialize
+    updateSlide();
+  </script>
+</body>
+</html>
